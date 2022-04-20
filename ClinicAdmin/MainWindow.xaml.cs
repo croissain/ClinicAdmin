@@ -32,5 +32,24 @@ namespace ClinicAdmin
                 this.DragMove();
             }
         }
+
+        private void AccountBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MainSectionControl.SelectedIndex = 1;
+
+        }
+
+        private void DashboardBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MainSectionControl.SelectedIndex = 0;
+        }
+
+        //Phần này là thử thôi nha
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int index = int.Parse(((Button)e.Source).Uid);
+            //GridCursor.Margin = new Thickness(0, 10 + (50 * index), 0, 0);
+            MainSectionControl.SelectedIndex = index;
+        }
     }
 }
