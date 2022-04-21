@@ -75,32 +75,22 @@
                            Margin="20 30"
                            Background="#cde0c9" />
                 
-                <!--Menu Buttons-->
-                <Button x:Name="DashboardBtn" Click="DashboardBtn_Click">
-                    <StackPanel Orientation="Horizontal">
-                        <fa:IconImage Icon="Home"/>
-                        <TextBlock Text="Dashboard"/>
-                    </StackPanel>
-                </Button>
+                <StackPanel Orientation="Vertical" VerticalAlignment="Top">
+                    <Button Uid="0" Click="ButtonNav_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <fa:IconImage Icon="Home"/>
+                            <TextBlock Text="Dashboard"/>
+                        </StackPanel>
+                    </Button>
 
-                <!--Account Buttons-->
-                <Button x:Name="AccountBtn" Click="AccountBtn_Click">
-                    <StackPanel Orientation="Horizontal">
-                        <fa:IconImage Icon="UserCircle"/>
-                        <TextBlock Text="Account"/>
-                    </StackPanel>
-                </Button>
+                    <Button Uid="1" Click="ButtonNav_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <fa:IconImage Icon="UserCircle"/>
+                            <TextBlock Text="Account"/>
+                        </StackPanel>
+                    </Button>
 
-                <!--<StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="10 0">
-                    <Grid x:Name="GridCursor" Width="150" Height="5" Background="#FF2196F3" HorizontalAlignment="Center"/>
-                    <Button Uid="0" Width="150" Content="HOME" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"/>
-                    <Button Uid="1" Width="150" Content="SHOP" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"/>
-                    <Button Uid="2" Width="150" Content="BLOG" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"/>
-                    <Button Uid="3" Width="150" Content="PAGES" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"/>
-                    <Button Uid="4" Width="150" Content="PRODUCTS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"/>
-                    <Button Uid="5" Width="150" Content="BRANDS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"/>
-                    <Button Uid="6" Width="150" Content="GIFT CARDS" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2196F3" Click="Button_Click"/>
-                </StackPanel>-->
+                </StackPanel>
             </StackPanel>
         </Border>
 
